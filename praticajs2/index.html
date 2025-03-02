@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- <script>
+        var nome = window.prompt('Qual o seu nome')
+        document.write(`O seu nome tem ${nome.length} letras <br>`)
+        document.write(` seu nome em letras maiúsculas é ${nome.toUpperCase()}<br>`);
+        document.write(`\nO seu nome em letras minúsculas ficará assim ${nome.toLowerCase()}`)
+    </script> -->
+<!-- 
+    <script>
+        var n1 = Number(window.prompt('Digite um valor e converterei em reais'));
+        document.write(`O valor que você digitou no prompt convertido em reais ficará assim ${n1.toLocaleString('pr-BR', {style:"currency", currency: 'BRL'})}`);
+    </script> -->
+
+    <script>
+        var nome = window.prompt('Digite seu nome: ').toUpperCase() //exibe um prompt
+        let data = new Date().toLocaleString(); //data e hora atuais
+        document.write(`A data atual é ${data}<br> e seu nome em letras maiúsculas é ${nome}`)// exibe nome em letras maiúsculas e data atual na página html
+    </script>
+</body>
+</html>
