@@ -41,7 +41,9 @@
       function resetDiv() {
         clearTimeout(timeout);
         timeout = setTimeout(() => {
-        res.innerText = 'resultado'
+          document.getElementById("txtn1").value = "";
+          document.getElementById("txtn2").value = "";
+          document.getElementById('res').innerHTML = 'Some outros valores'
         }, 2000);
       }
     </script>
