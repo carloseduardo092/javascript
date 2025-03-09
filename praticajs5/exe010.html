@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nacionalidade</title>
+  </head>
+  <body>
+    <h1>Nacionalidade</h1>
+    digite o pais que você nasceu:
+    <input type="text" id="txt" />
+    <input type="button" value="verificar" onclick="origem()" />
+    <div id="res"></div>
+
+    <script>
+      function origem() {
+        let txt1 = document.getElementById("txt");
+        let res = document.getElementById("res");
+        if (txt1.value != "EUA") {
+          res.innerHTML = `<p>Você é <strong>brasileiro</strong></p>`;
+        } else {
+          res.innerHTML = "Você é estrangeiro";
+        }
+      }
+    </script>
+  </body>
+</html>

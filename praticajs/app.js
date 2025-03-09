@@ -1,8 +1,8 @@
-var nome = window.prompt("Qual é o seu nome ?");
-window.alert("Seja bem vindo, " + nome + "!");
+// var nome = window.prompt("Qual é o seu nome ?");
+// window.alert("Seja bem vindo, " + nome + "!");
 
 let carrinho = [];
-function adicionarProdut(elemento) {
+function adicionarProduto(elemento) {
   let id = elemento.getAttribute("data-id");
   let nome = elemento.getAttribute("data-nome");
   let preco = parseFloat(elemento.getAttribute("data-preco"));
