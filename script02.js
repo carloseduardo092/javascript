@@ -8,7 +8,7 @@ function gerarTabuada () {
 
     select.innerHTML = '<option value = ""> Selecione um número</option>'
 
-    for (let i = 10; i <= 10; i++) {
+    for (let i = 1; i <= 10; i++) {
         let option = document.createElement('option')
         option.value = i * num
         option.textContent = `${num} x ${i} = ${num * i}`
@@ -18,7 +18,7 @@ function gerarTabuada () {
     select.focus()
     select.size = 10
 
-    select.addEventListener("blu", () => {
+    select.addEventListener("blur", () => {
         select.size = 1
     }, {once: true})
 }
